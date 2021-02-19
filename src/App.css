@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import 'antd/dist/antd.css';
+
+
+
+
+h3, h1{
+    text-align: center;
+    font-size:2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-layout-header{
+        background:#5575f7;
+        text-align: center;
+        text-transform: uppercase;
+       
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{
+    text-transform: uppercase;
+   letter-spacing:2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    color:#fff;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-layout-content{
+   padding : 0 50px;
+   height:100%;
+   min-height:87vh;
+   margin:20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-layout-footer{
+
+}
+
+.ant-col{
+    padding:20px;
+}
+.column {
+    width: 30%;
+}
+
+.droppable-col {
+    width: 100%;
+    background-color: #5575f7;
+    height:100%;
+    min-height:200px;
+    
+    padding: 10px 10px 0 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 7px;
+    font-size:16px;
+ 
+}
+
+.item.dragging {
+    background-color: rgb(37, 32, 32);
+
+    color:#fff;
+}
+
+ .anticon{
+    color:#000;
+}
+.item{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight:500;
+}
+.add{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+}
+.add button{
+    margin-left:20px;
+    padding:10px 30px;
+    cursor:pointer;
+}
+input{
+    width:100%;
+    max-width:250px;
+    padding:10px 30px;
+}
+.delete{
+    margin-right:5px;
 }
